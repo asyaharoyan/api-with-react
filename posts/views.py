@@ -39,7 +39,7 @@ class PostDetail(APIView):
 
     def get_object(self, pk):
         try:
-            profile = profile.objects.get(pk=pk)
+            post = Post.objects.get(pk=pk)
             self.check_object_permissions(self.request, post)
             return post
         except Post.DoesNotExist:
@@ -55,7 +55,7 @@ class PostDetail(APIView):
     def put(self, request, pk):
         post = self.get_object(pk)
         serializer = PostSerializer(
-            profile, data=request.data, context={'request': request}
+            post, data=request.data, context={'request': request}
         )
         if serializer.is_valid():
             serializer.save()
