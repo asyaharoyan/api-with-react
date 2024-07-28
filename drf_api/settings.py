@@ -64,8 +64,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-    '8000-asyaharoyan-apiwithreac-qjbkpol1rib.ws.codeinstitute-ide.net',
-    'my-firts-api-project.herokuapp.com'
+    'localhost',
+    'my-firts-api-project.herokuapp.com',
     ]
 
 
