@@ -67,6 +67,7 @@ DEBUG = 'DEV' in os.environ
 ALLOWED_HOSTS = [
     'localhost',
     os.environ.get('ALLOWED_HOST'),
+    '8000-asyaharoyan-apiwithreac-qjbkpol1rib.ws.codeinstitute-ide.net',
     ]
 
 
