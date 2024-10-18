@@ -133,6 +133,7 @@ TEMPLATES = [
 
 CORS_ALLOWED_ORIGINS = [
     'https://3000-asyaharoyan-momentsreac-bhpf2yuzlbs.ws.codeinstitute-ide.net',
+    'https://moments-by-asya-423130c910f3.herokuapp.com',
 ]
 
 if 'CLIENT_ORIGIN' in os.environ:
