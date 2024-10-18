@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class Follower(models.Model):
     """
-     Follower model, related to 'owner' and 'followed'.
+    Follower model, related to 'owner' and 'followed'.
     'owner' is a User that is following a User.
     'followed' is a User that is followed by 'owner'.
     We need the related_name attribute so that django can differentiate.
@@ -13,10 +13,10 @@ class Follower(models.Model):
     """
     owner = models.ForeignKey(
         User, related_name='following', on_delete=models.CASCADE
-        )
+    )
     followed = models.ForeignKey(
         User, related_name='followed', on_delete=models.CASCADE
-        )
+    )
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:

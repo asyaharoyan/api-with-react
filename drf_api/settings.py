@@ -133,7 +133,6 @@ TEMPLATES = [
 
 CORS_ALLOWED_ORIGINS = [
     'https://3000-asyaharoyan-momentsreac-bhpf2yuzlbs.ws.codeinstitute-ide.net',
-    'https://moments-by-asya-423130c910f3.herokuapp.com',
 ]
 
 if 'CLIENT_ORIGIN' in os.environ:
@@ -142,6 +141,7 @@ if 'CLIENT_ORIGIN' in os.environ:
     ]
 if 'CLIENT_ORIGIN_DEV' in os.environ:
     CORS_ALLOWED_ORIGIN_REGEXES = [r"^https://.*\.codeinstitute-ide\.net$",]
+
 
 CORS_ALLOW_CREDENTIALS = True
 
